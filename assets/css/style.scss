@@ -19,7 +19,7 @@ html { filter: contrast(100%) brightness(100%) saturate(100%); }.NIGHTEYE_Filter
 
 #container {
   min-height: 595px;
-  background: #1f1f1f !important;
+  background: transparent url(../images/highlight-bg.jpg) 0% 0 no-repeat;
 }
 
 code {
