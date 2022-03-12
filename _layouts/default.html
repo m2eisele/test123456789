@@ -51,42 +51,60 @@
     </div>
 
     <form name="calculator">
-      <table>
+      <table cellpadding="0" cellspacing="0" border="0">
+         <tr>
+            <td><label></label></td>
+            <td><label><u>Base</u><br></label></td>
+            <td><label><u>Current</u><br></label></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="level" value="LVL"></td>
+            <td><input type="text" name="lvl-base" value="1" id="lvl-base" disabled></td>
+            <td><input type="text" name="lvl-display" value="1" id="lvl-display" disabled></td>
+         </tr>
          <tr>
             <td><input type="button" name="vigor" value="VGR"></td>
-            <td><input type="text" name="vigor-display" value="10" id="vgr-display" /></td>
+            <td><input type="text" name="vgr-base" value="10" id="vgr-base" disabled></td>
+            <td><input type="text" name="vgr-display" value="10" id="vgr-display"></td>
          </tr>
          <tr>
             <td><input type="button" name="mind" value="MND"></td>
-            <td><input type="text" name="mind-display" value="10" id="mnd-display"></td>
+            <td><input type="text" name="mnd-base" value="10" id="mnd-base" disabled></td>
+            <td><input type="text" name="mnd-display" value="10" id="mnd-display"></td>
          </tr>
          <tr>
             <td><input type="button" name="endurance" value="END"></td>
-            <td><input type="text" name="endurance-display" value="10" id="end-display"></td>
+            <td><input type="text" name="end-base" value="10" id="end-base" disabled></td>
+            <td><input type="text" name="end-display" value="10" id="end-display"></td>
          </tr>
          <tr>
-            <td><input type="button" name="vitality" value="VIT" disabled></td>
-            <td><input type="text" name="vitality-display" value="10" id="vit-display" disabled></td>
+            <td><input type="button" class="dsbld" name="vitality" value="VIT" disabled></td>
+            <td><input type="text" name="vit-base" value="10" id="vit-base" disabled></td>
+            <td><input type="text" name="vit-display" value="10" id="vit-display" disabled></td>
          </tr>
          <tr>
             <td><input type="button" name="strength" value="STR"></td>
-            <td><input type="text" name="strength-display" value="10" id="str-display"></td>
+            <td><input type="text" name="str-base" value="10" id="str-base" disabled></td>
+            <td><input type="text" name="str-display" value="10" id="str-display"></td>
          </tr>
          <tr>
             <td><input type="button" name="dexterity" value="DEX"></td>
-            <td><input type="text" name="dexterity-display" value="10" id="dex-display"></td>
+            <td><input type="text" name="dex-base" value="10" id="dex-base" disabled></td>
+            <td><input type="text" name="dex-display" value="10" id="dex-display"></td>
          </tr>
          <tr>
             <td><input type="button" name="intelligence" value="INT"></td>
-            <td><input type="text" name="intelligence-display" value="10" id="int-display"></td>
+            <td><input type="text" name="int-base" value="10" id="int-base" disabled></td>
+            <td><input type="text" name="int-display" value="10" id="int-display"></td>
          </tr>
          <tr>
             <td><input type="button" name="faith" value="FTH"></td>
-            <td><input type="text" name="faith-display" value="10" id="fth-display"></td>
+            <td><input type="text" name="fth-base" value="10" id="fth-base" disabled></td>
+            <td><input type="text" name="fth-display" value="10" id="fth-display"></td>
          </tr>
          <tr>
-            <td><input type="button" name="arcane" value="ARC" disabled></td>
-            <td><input type="text" name="arcane-display" value="lol" disabled></td>
+            <td><input type="button" class="dsbld" name="arcane" value="ARC" disabled></td>
+            <td colspan="2"><input type="text" name="arc-display" value="lol" disabled></td>
          </tr>
       </table>
    </form>
